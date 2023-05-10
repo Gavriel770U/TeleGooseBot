@@ -1,0 +1,4 @@
+# If you are using VSCode create venv (virtual environment).
+
+pip install selenium 
+pip install pyTelegramBotAPI
