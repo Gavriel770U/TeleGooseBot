@@ -71,7 +71,7 @@ def get_free_rooms(hour) -> list:
   classes = [
     ClassLabel.TET1, ClassLabel.TET2, ClassLabel.TET3, ClassLabel.TET4, ClassLabel.TET5, 
     ClassLabel.YOD1, ClassLabel.YOD2, ClassLabel.YOD3, ClassLabel.YOD4, ClassLabel.YOD5, 
-    ClassLabel.YODA1, ClassLabel.YODA2, ClassLabel.YODA3, ClassLabel.YODA4, ClassLabel.YODA5, ClassLabel.YODA6, 
+    ClassLabel.YODA1, ClassLabel.YODA2, ClassLabel.YODA3, ClassLabel.YODA4, ClassLabel.YODA5,
     ClassLabel.YODB1, ClassLabel.YODB2, ClassLabel.YODB3, ClassLabel.YOD4, ClassLabel.YODB5, ClassLabel.YODB6
   ]
   

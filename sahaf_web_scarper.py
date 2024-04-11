@@ -46,14 +46,14 @@ class ClassLabel(Enum):
   YODA3 = ("יא - 3", 13)
   YODA4 = ("יא - 4", 14)
   YODA5 = ("יא - 5", 15)
-  YODA6 = ("יא - 6", 16)
+  #YODA6 = ("יא - 6", 16)
   
-  YODB1 = ("יב - 1", 17)
-  YODB2 = ("יב - 2", 18)
-  YODB3 = ("יב - 3", 19)
-  YODB4 = ("יב - 4", 20)
-  YODB5 = ("יב - 5", 21)
-  YODB6 = ("יב - 6", 22)
+  YODB1 = ("יב - 1", 16)
+  YODB2 = ("יב - 2", 17)
+  YODB3 = ("יב - 3", 18)
+  YODB4 = ("יב - 4", 19)
+  YODB5 = ("יב - 5", 20)
+  YODB6 = ("יב - 6", 21)
 
 def click_on_schedule(driver) -> None:
   """
@@ -215,7 +215,7 @@ def parse_with_changes() -> list:
   classes = [
     ClassLabel.TET1, ClassLabel.TET2, ClassLabel.TET3, ClassLabel.TET4, ClassLabel.TET5, 
     ClassLabel.YOD1, ClassLabel.YOD2, ClassLabel.YOD3, ClassLabel.YOD4, ClassLabel.YOD5, 
-    ClassLabel.YODA1, ClassLabel.YODA2, ClassLabel.YODA3, ClassLabel.YODA4, ClassLabel.YODA5, ClassLabel.YODA6, 
+    ClassLabel.YODA1, ClassLabel.YODA2, ClassLabel.YODA3, ClassLabel.YODA4, ClassLabel.YODA5, #ClassLabel.YODA6, 
     ClassLabel.YODB1, ClassLabel.YODB2, ClassLabel.YODB3, ClassLabel.YOD4, ClassLabel.YODB5, ClassLabel.YODB6
   ]
   
@@ -241,8 +241,8 @@ def parse_with_changes() -> list:
     for occupied_room in occupied_rooms:
       if CURRENT_ROOM_IS_FREE != is_current_room_free_now and new_occupied_room_number != 0:
         free_rooms.remove(new_occupied_room_number)   
-      elif CURRENT_ROOM_IS_FREE != is_current_room_free_now and occupied_room in free_rooms: 
-        free_rooms.remove(occupied_room)
+    #  elif CURRENT_ROOM_IS_FREE != is_current_room_free_now and occupied_room in free_rooms: 
+    #    free_rooms.remove(occupied_room)
     time.sleep(1)
 
   driver.close()
